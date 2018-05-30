@@ -3,6 +3,7 @@ import chalk from "chalk";
 //TODO: Add .env & dotenv
 
 const login = async (username, password) => {
+  console.log(`login called`);
   let endpoint = `${process.env.AUTHER_ENDPOINT}/mock/post/login`;
   const { body } = await got.post(endpoint, {
     body: {
