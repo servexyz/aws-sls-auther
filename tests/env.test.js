@@ -5,13 +5,13 @@ test.before(t => {
 });
 
 test("AUTHER_ENDPOINT set", t => {
-  t.is(process.env.AUTHER_ENDPOINT, "http://localhost:3000");
+  t.is(process.env.AUTHER_ENDPOINT, "http://localhost:3000/api");
 });
 
 test("AUTHER_MOCK_USERNAME set", t => {
-  t.is(process.env.AUTHER_MOCK_USERNAME, "demo-cognito-pool@serve.xyz");
+  t.truthy(process.env.AUTHER_MOCK_USERNAME);
 });
 
 test("AUTHER_MOCK_PASSWORD set", t => {
-  t.is(process.env.AUTHER_MOCK_PASSWORD, "Demopool123!");
+  t.truthy(process.env.AUTHER_MOCK_PASSWORD);
 });

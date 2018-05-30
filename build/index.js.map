@@ -1,1 +1,1 @@
-{"version":3,"sources":["../index.js"],"names":["console","log"],"mappings":"AAAAA,QAAQC,GAAR,CAAY,IAAZ","file":"index.js","sourcesContent":["console.log(\"hi\");\n"]}
+{"version":3,"sources":["../index.js"],"names":["require","config"],"mappings":";;AAAAA,QAAQ,QAAR,EAAkBC,MAAlB","sourcesContent":["require(\"dotenv\").config();\n"],"file":"index.js"}
