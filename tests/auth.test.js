@@ -1,7 +1,7 @@
 import test from "ava";
 
-test("foo", t => {
-  t.pass();
+test.before(t => {
+  require("dotenv").config();
 });
 
 test("bar", async t => {

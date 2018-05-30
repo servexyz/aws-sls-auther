@@ -1,5 +1,5 @@
 {
-  "name": "npm-starter",
+  "name": "aws-sls-auther",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,7 +12,8 @@
     "@babel/core": "^7.0.0-beta.39",
     "@babel/node": "^7.0.0-beta.39",
     "@babel/preset-env": "^7.0.0-beta.39",
-    "ava": "^1.0.0-beta.1"
+    "ava": "^1.0.0-beta.1",
+    "dotenv": "^5.0.1"
   },
   "scripts": {
     "dev": "babel-node index.js",
@@ -32,5 +33,9 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "got": "^8.3.1"
   }
 }
