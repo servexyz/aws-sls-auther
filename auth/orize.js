@@ -10,4 +10,4 @@ const isAuthorized = async jwt => {
   return body;
 };
 
-module.exports = { isAuthorized };
+export { isAuthorized };

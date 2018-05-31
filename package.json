@@ -1,7 +1,7 @@
 {
   "name": "aws-sls-auther",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -14,4 +14,4 @@ const authenticate = async (username, password) => {
   return body.token;
 };
 
-module.exports = { authenticate };
+export { authenticate };

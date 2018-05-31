@@ -1,7 +1,8 @@
 require("dotenv").config();
 
-const { isAuthorized } = require('./auth/orize.js');
-const { authenticate } = require('./auth/enticate.js');
+export { isAuthorized } from "./auth/orize.js";
+export { authenticate } from "./auth/enticate.js";
 
-module.exports = { isAuthorized, authenticate } 
-
+// const { isAuthorized } = require("../auth/orize.js");
+// const { authenticate } = require("../auth/enticate.js");
+// module.exports = { isAuthorized, authenticate };
