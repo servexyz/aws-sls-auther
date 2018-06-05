@@ -113,6 +113,9 @@ module.exports = require("dotenv");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_got___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_got__);
 
 
+//NOTE: Assumption here is that there's only one API (ie. AUTHER_ENDPOINT)
+// This would break if there were two endpoints. Or the user would have to
+// manually configure AUTHER_ENDPOINT everytime a new API was selected
 const isAuthorized = async jwt => {
   let endpoint = `${process.env.AUTHER_ENDPOINT}/get/protected`;
   const { body } = await __WEBPACK_IMPORTED_MODULE_0_got___default()(endpoint, {

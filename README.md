@@ -2,12 +2,6 @@
 
 > Intended for use with AWS-SLS-Auth-Starter & Prisma-Authorized-Starter
 
-## Getting Started
-
-### Install
-
-...
-
 ### Use
 
 **Test**
