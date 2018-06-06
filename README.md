@@ -4,14 +4,10 @@
 
 ### Use
 
-**Test**
 
 ```bash
-npm run test
-```
-
-**Execute**
-
-```bash
+npm install
 npm start
 ```
+
+
