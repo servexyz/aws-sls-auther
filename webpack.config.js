@@ -1,5 +1,4 @@
 const path = require("path");
-const NodemonPlugin = require("nodemon-webpack-plugin");
 
 module.exports = {
   entry: ["@babel/polyfill", path.resolve(__dirname, "src/index.js")],
@@ -23,6 +22,5 @@ module.exports = {
         }
       }
     ]
-  },
-  plugins: [new NodemonPlugin()]
+  }
 };

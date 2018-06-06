@@ -1,7 +1,6 @@
 {
   "presets": [
-    "@babel/preset-env",
-    "@ava/stage-4"
+    "@babel/preset-env"
   ],
   "plugins": [
     [
