@@ -7,9 +7,6 @@
     "type": "git",
     "url": "https://github.com/servexyz/aws-sls-auther"
   },
-  "engines": {
-    "node": ">=8.9.0"
-  },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.49",
     "@babel/core": "^7.0.0-beta.49",
@@ -24,15 +21,15 @@
     "webpack-cli": "^3.0.2"
   },
   "dependencies": {
-    "@ava/babel-preset-stage-4": "^1.1.0",
-    "@ava/babel-preset-transform-test-files": "^3.0.0",
     "chalk": "^2.4.1",
     "got": "^8.3.1"
   },
   "scripts": {
-    "start": "npm-run-all --parallel dev test",
-    "dev": "backpack",
-    "build": "backpack build",
-    "test": "ava --watch --verbose"
+    "test": "ava --watch --verbose",
+    "start": "npm run dev",
+    "start:prod": "npm-run-all -s clean prod",
+    "clean": "rm -Rf ./build",
+    "dev": "webpack --mode development --watch",
+    "prod": "webpack --mode production"
   }
 }

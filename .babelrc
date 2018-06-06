@@ -1,7 +1,15 @@
 {
   "presets": [
-    "backpack-core/babel",
-    "@ava/stage-4",
-    "@ava/transform-test-files"
+    [
+      "@babel/preset-env"
+    ]
+  ],
+  "plugins": [
+    [
+      "babel-plugin-dotenv",
+      {
+        "replacedModuleName": "babel-dotenv"
+      }
+    ]
   ]
 }
