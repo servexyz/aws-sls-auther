@@ -1,4 +1,6 @@
-const { isAuthorized } = require("./auth/orize.js");
-const { authenticate } = require("./auth/enticate.js");
-module.exports = { isAuthorized, authenticate };
-console.log(`Local AWS-SLS-Auther 4`);
+console.log(`Local AWS-SLS-Auther 6`);
+
+import authenticate from "./auth/enticate.js";
+import isAuthorized from "./auth/orize.js";
+
+export { authenticate, isAuthorized };
