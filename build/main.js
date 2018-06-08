@@ -4772,7 +4772,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _orize = __webpack_require__(/*! ./auth/orize.js */ \"./src/auth/orize.js\");\n\nvar _enticate = __webpack_require__(/*! ./auth/enticate.js */ \"./src/auth/enticate.js\");\n\nconsole.log(\"Local aws-sls-auther 2\");\nvar _default = {\n  authenticate: _enticate.authenticate,\n  isAuthorized: _orize.isAuthorized\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nvar _require = __webpack_require__(/*! ./auth/orize.js */ \"./src/auth/orize.js\"),\n    isAuthorized = _require.isAuthorized;\n\nvar _require2 = __webpack_require__(/*! ./auth/enticate.js */ \"./src/auth/enticate.js\"),\n    authenticate = _require2.authenticate;\n\nmodule.exports = {\n  isAuthorized: isAuthorized,\n  authenticate: authenticate\n};\nconsole.log(\"Local AWS-SLS-Auther 4\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

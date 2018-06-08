@@ -13,4 +13,4 @@ const isAuthorized = async jwt => {
   return body;
 };
 
-export { isAuthorized };
+export default isAuthorized;

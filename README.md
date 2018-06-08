@@ -10,7 +10,4 @@ npm install
 npm start
 ```
 
-### Testing
-In order to run tests successfully, must be running AWS-SLS-Auth-Starter server.
-
 

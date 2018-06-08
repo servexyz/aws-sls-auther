@@ -15,4 +15,4 @@ const authenticate = async (username, password) => {
   return body.token;
 };
 
-export { authenticate };
+export default authenticate;
