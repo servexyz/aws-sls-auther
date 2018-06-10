@@ -4,7 +4,7 @@ import { AUTHER_ENDPOINT } from "babel-dotenv";
 // This would break if there were two endpoints. Or the user would have to
 // manually configure AUTHER_ENDPOINT everytime a new API was selected
 
-export default async function(jwt) {
+export async function isAuthorized(jwt) {
   let endpoint = `${AUTHER_ENDPOINT}/get/protected`;
   const { body } = await got(endpoint, {
     headers: {
