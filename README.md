@@ -4,10 +4,11 @@
 
 ### Install
 
-**1. Install aws-sls-auther's dependencies**
+**1. Install dependencies and enable .env**
 
 ```bash
 npm install
+mv .env.sample .env
 ```
 
 **2. Download & install aws-sls-auth-starter**
