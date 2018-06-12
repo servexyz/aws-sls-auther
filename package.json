@@ -28,7 +28,7 @@
     "dev": "npm run start:webpack",
     "start:babel": "babel-node src/index.js",
     "start:webpack": "webpack --mode development --watch",
-    "start": "npm-run-all -s clean build test",
+    "start": "npx npm-run-all -s clean build test",
     "clean": "rm -Rf ./build",
     "build": "webpack --mode production",
     "test": "ava"
