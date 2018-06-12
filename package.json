@@ -24,6 +24,11 @@
     "webpack-cli": "^3.0.2",
     "webpack-node-externals": "^1.7.2"
   },
+  "dependencies": {
+    "idempotent-babel-polyfill": "^0.1.1",
+    "chalk": "^2.4.1",
+    "got": "^8.3.1"
+  },
   "scripts": {
     "dev": "npm run start:webpack",
     "start:babel": "babel-node src/index.js",
@@ -39,10 +44,5 @@
       "idempotent-babel-polyfill"
     ],
     "verbose": true
-  },
-  "dependencies": {
-    "idempotent-babel-polyfill": "^0.1.1",
-    "chalk": "^2.4.1",
-    "got": "^8.3.1"
   }
 }
